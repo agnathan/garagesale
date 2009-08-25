@@ -1,0 +1,28 @@
+<p>
+  <b>Item:</b>
+  <%=h @message.item_id %>
+</p>
+
+<p>
+  <b>Nom:</b>
+  <%=h @message.nom %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @message.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @message.phone %>
+</p>
+
+<p>
+  <b>Texte:</b>
+  <%=h @message.texte %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>

@@ -10,6 +10,7 @@
 
 <% @items.each do |item| %>
   <tr>
+    <td><a class="lightbox" title="<%= item.nom %>" href="<%= item.photo.url(:medium) %>"><%= image_tag item.photo.url(:thumb) %></td></a>
     <td><%=h item.nom %></td>
     <td><%=h item.description %></td>
     <td><%=h item.prix %></td>

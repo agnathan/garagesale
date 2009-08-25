@@ -1,0 +1,31 @@
+<h1>New message</h1>
+
+<% form_for(@message) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :item_id %><br />
+    <%= f.text_field :item_id %>
+  </p>
+  <p>
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </p>
+  <p>
+    <%= f.label :texte %><br />
+    <%= f.text_area :texte %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', messages_path %>

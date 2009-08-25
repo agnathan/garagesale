@@ -5,7 +5,22 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Items: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'scaffold', 'jquery.fancybox' %>
+  <%= javascript_include_tag 'jquery-1.3.2.min', 'jquery.easing.1.3', 'jquery.fancybox-1.2.1.pack' %>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+  $("a.lightbox").fancybox({
+    'overlayShow'     : false,
+    'zoomSpeedIn'     : 600,
+    'zoomSpeedOut'      : 500,
+    'easingIn'        : 'easeOutBack',
+    'easingOut'       : 'easeInBack'
+  });
+
+    });
+  </script>
+
 </head>
 <body>
 
