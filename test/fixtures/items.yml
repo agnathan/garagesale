@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nom: MyString
+  description: MyText
+  prix: 1.5
+  vendu: false
+
+two:
+  nom: MyString
+  description: MyText
+  prix: 1.5
+  vendu: false
